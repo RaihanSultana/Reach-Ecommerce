@@ -21,6 +21,7 @@
     padding: 10px;
     border:none;
     width: 100%;
+    color: white !important;
 }
 .header__searchIcon{
     padding: 5px;
