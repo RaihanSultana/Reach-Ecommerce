@@ -28,9 +28,20 @@
     height: 22px !important;
     background-color: #cd904d;
 }
+.header__nav{
+    display: flex;
+    justify-content: space-evenly;
+}
 .Header__option{
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+}
+.header__optionLiwoneOne{
+    font-size: 10px;
+}
+.header__optionLineT{
+    font-size: 13px;
+    font-weight: 800;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 // import SearchIcon from "@material-ui/icons/Search"
 import SearchIcon from '@material-ui/icons/Search'; 
+import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import './Header.css'
 import { Link } from "react-router-dom";
 
@@ -12,10 +13,33 @@ function Header(){
                 <input type="text" className="header__searchInput" />
                 <SearchIcon className="header__searchIcon" />   
             </div>
-            <Link to="/" className="header__link">
-                <div className="Header__option">
-                    <span className="Header__optionLineOne">Hello, User</span>
-                    <span className="Header__optionLineOne">Sign In or Sign Out</span>
+            <div className="header__nav">
+                {/* 1st link */}
+                <Link to="/" className="header__link">
+                    <div className="Header__option">
+                        <span className="Header__optionLineOne">Hello, User</span>
+                        <span className="Header__optionLineTwo">Sign In or Sign Out</span>
+                    </div>
+                </Link>
+                {/* 2st link */}
+                <Link to="/" className="header__link">
+                    <div className="Header__option">
+                        <span className="Header__optionLineOne">Returns</span>
+                        <span className="Header__optionLineTwo">& Orders</span>
+                    </div>
+                </Link>
+                {/* 3st link */}
+                <Link to="/" className="header__link">
+                    <div className="Header__option">
+                        <span className="Header__optionLineOne">Your</span>
+                        <span className="Header__optionLineTwo">Prime</span>
+                    </div>
+                </Link>
+            </div>
+            <Link to="/checkout" className="header__link">
+                <div className="header__optionBasket">
+                    <ShoppingBasketIcon />
+                    
                 </div>
             </Link>
         </nav>
